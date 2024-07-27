@@ -1,3 +1,16 @@
+import math
+if 1 == 11: # Отключает сдвинутую ниже часть кода
+    n = 700
+    m = 750
+
+    def chetchik(n, m ) :
+        return math.ceil(m / n)
+
+    print(chetchik(n, m))
+    print((n + m - 1) // n)
+
+
+
 '''
 Задача №2. Решение в группах
 В некоторой школе решили набрать три новых
@@ -11,3 +24,14 @@ Input: 20 21 22(ввод чисел НЕ в одну строку)
 Output: 32
 '''
 
+
+import math # импортируем библеотеку"math"
+# Вводим количиство учеников с консоли 
+a = int(input())
+b = int(input())
+c = int(input())
+
+def party(a, b, c,) :
+    result = math.ceil(a / 2) + math.ceil(b / 2) + math.ceil(c / 2)# Делим каждую переменную на 2 и складываем
+    print(result) # Печатаем результат
+party(a, b, c)

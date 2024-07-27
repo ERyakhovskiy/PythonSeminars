@@ -13,6 +13,7 @@ Output:
 2
 '''
 import math
+ 
 n = 700
 m = 750
 
