@@ -12,10 +12,11 @@ n = 24 -> 4 16 4
 # n = 60 -> 10 40 10 
 '''
 n = 6
-a = None # Петя
-b = None # Катя
-c = None # Сережа
+#a = None # Петя
+#b = None # Катя 
+#c = None # Сережа
 
 
-if n = a == c and (b // 2 == a + c):
-    print(a,b,c)
+# if (a == c) and (b // 2 == a + c) :
+#     res = a + b + c
+

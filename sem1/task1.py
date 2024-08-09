@@ -20,5 +20,5 @@ m = 750
 def chetchik(n, m ) :
     return math.ceil(m / n)
 
-print(chetchik(n, m))
-print((n + m - 1) // n)
+print(chetchik(n, m)) 
+print((n + m - 1) // n) # Второй способ округления деления
