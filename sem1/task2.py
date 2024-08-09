@@ -31,7 +31,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 
-def party(a, b, c,) :
+def party(a, b, c,):
     result = math.ceil(a / 2) + math.ceil(b / 2) + math.ceil(c / 2)# Делим каждую переменную на 2 и складываем
     print(result) # Печатаем результат
 party(a, b, c)
