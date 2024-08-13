@@ -9,3 +9,19 @@ Output: 6
 '''
 
 #Ряд фибоначи: каждый последующий эл-т равен сумме придыдущих т.е 0, 1, 1, 2, 5, 8, 13, 21
+
+a = int(input("введите число: "))
+first = 1 # first 1 эл-т назад
+second = 0 # second 2 эл-та назад
+current = first + second # curretn - текущий эл-т ряда фибоначи
+n = 3 # n - номер текущего вычесляемого эл-та
+while current < a: # До тех пор пока текущий эл-т ряда Ф. меньше введенного числа, будет вычесляться:2
+    n += 1
+    second = first
+    first = current
+    current = first + second
+if a != current:
+    print("-1")
+else:
+    print("n =",n)
+    
