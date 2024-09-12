@@ -1,3 +1,6 @@
+# Решить!!!!
+
+
 '''
 Задача №4. Решение в группах
 
@@ -14,3 +17,14 @@ Output: 2 (-1 < 5, 2 < 3)
 '''
 
 a = [0, -1, 5, 2, 3]
+new_a = ()
+count = 0
+
+for i in a:
+    
+    if i < (i + 1):
+        count += 1
+        new_a.append(i)
+        # print(f"{count} ({i} < {i + 1})")
+        print(new_a)
+    
