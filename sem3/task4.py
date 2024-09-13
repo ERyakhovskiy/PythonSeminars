@@ -16,15 +16,17 @@ Output: 2 (-1 < 5, 2 < 3)
 списка или список задан изначально.
 '''
 
-a = [0, -1, 5, 2, 3]
-new_a = ()
+s = [0, -1, 5, 2, 3]
+n = len(s)
+# new_s = []
 count = 0
 
-for i in a:
-    
-    if i < (i + 1):
-        count += 1
-        new_a.append(i)
-        # print(f"{count} ({i} < {i + 1})")
-        print(new_a)
-    
+for i in range(n):
+    for j in range(0, n-i-1): 
+        if s[j] < s[j+1]:
+            count += 1
+            # print(f"{count} ({i} < {i + 1})")        
+        else:
+            # new_s.append(s[j], '<', s[j + 1])
+            print(f"{count} ({s[j]} < {s[j + 1]})")
+# print(new_s)

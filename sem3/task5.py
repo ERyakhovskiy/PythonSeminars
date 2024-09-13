@@ -9,3 +9,10 @@
 
 '''
 
+k = int(input("Введите число:"))
+f = 0
+s = 1
+sum = f + s
+g = list[1,0,1]
+for i in range(k -1):
+    insert
