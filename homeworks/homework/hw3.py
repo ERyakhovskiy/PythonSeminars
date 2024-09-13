@@ -234,14 +234,19 @@ ___________________________________________________________________________
 
 n = [1, 4, -3, 0, 10]
 # previous
-current = 0 
-print(n)
-max = len(n)
-for i in range(len(n)):
-    
-    while 
+current = 0
+print('Заданный список:',n)
+# max = len(n)
+for i in range (n[len(n)-1]):
+    i += 1
+    for current in n:
+        if current > i:
+            corrent = i
+            
+            
+             
         
-        print(n)
+print("Отсартированный:",n)
     
     
         
