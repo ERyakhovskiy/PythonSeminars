@@ -26,14 +26,15 @@ for i in range(num):
 print(*watermelons)
     
 for i in watermelons:
-    min = 1
-    max = 0
-    if i < min:
+    min = i[0]
+    max = i[0]
+    if i < 0 < min:
         min = i
-        i += 1
+        
     if i > max:
         max = i
-        i += 1
+    i += 1
+
 print(min, max)
 
 
