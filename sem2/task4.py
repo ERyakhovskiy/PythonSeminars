@@ -24,17 +24,19 @@ for i in range(num):
     weight = int(input("Введите вес арбуза: "))
     watermelons.append(weight)
 print(*watermelons)
-    
+   
+   
+
+max = 0 
+min = 1
 for i in watermelons:
-    min = i[0]
-    max = i[0]
-    if i < 0 < min:
-        min = i
-        
+   
     if i > max:
         max = i
-    i += 1
-
+        
+    if i < min:
+        min = i
+               
 print(min, max)
 
 
