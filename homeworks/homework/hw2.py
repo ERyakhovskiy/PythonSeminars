@@ -437,14 +437,14 @@ girls = int(input("Введите количество девочек: "))
 if boys > girls * 2 or girls > boys * 2:
     print("Нет решения")
     
-elif boys >= girls:
+if boys >= girls:
     k = boys - girls
     print("Лишние мальчики:",k)
     
-    for i in range(boys):
-        row = "b"
+    # for i in range(boys):
+    #     row = "b"
         
-        print(row)
+    #     print(row)
     
     # for i in row:
         
