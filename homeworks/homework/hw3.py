@@ -453,14 +453,15 @@ ______________________________________________________________________________
 # print(pizzaTime)
 
 
-
+# Ввод количества заказов
 ordersCount = int(input("Введите колличество заказов: "))
+# Создаем пустой словарь для хранения данных о заказах
 ordersBase = dict()
-
+# Обрабатываем каждый заказ
 for i_order in range(ordersCount):
     customer, pizza_name, count = input('{} заказ: '.format(i_order+ 1)).split()
-
-
+# 
+count = int(count)
 
 
 
