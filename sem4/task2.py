@@ -19,17 +19,36 @@ Output: 13
 # Потом переводим во множество
 # Потом берем длинну этого множества
 
+# 1-й Вариант решения:
+
+
+# data = '''She sells sea shells on the sea shore The shells
+# that she sells are sea shells I'm sure.So if she sells sea
+# shells on the sea shore I'm sure that the shells are sea
+# shore shells'''
+
+# data = data.lower().replace(__old: '.', __new: ' ').split()
+
+# result = len(set(data))
+
+# print(result)
+
+
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+# 2-й Вариант решения:(почему то выдает 14 а не 13)
 
 
 data = '''She sells sea shells on the sea shore The shells
-that she sells are sea shells I'm sure.So if she sells sea
-shells on the sea shore I'm sure that the shells are sea
-shore shells'''
-
-data = data.lower().replace(__old: '.', __new: ' ').split()
-
-result = len(set(data))
+# that she sells are sea shells I'm sure.So if she sells sea
+# shells on the sea shore I'm sure that the shells are sea
+# shore shells'''
 
 
+data = data.lower().replace('.', ' ')
+
+result = len(set(data.split()))
 
 print(result)
+
