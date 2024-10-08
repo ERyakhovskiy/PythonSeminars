@@ -384,7 +384,8 @@ ____________________________________________________________________________
 
 
 '''
-Задача 5. Пицца
+Задача № 5. Пицца
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 В базе данных интернет-магазина PizzaTime хранятся сведения о том, кто, что и
 сколько заказывал у них в определённый период.
 
@@ -452,6 +453,8 @@ ______________________________________________________________________________
 #     order = list(input(f{i}'заказ: '))
 # print(pizzaTime)
 
+#______________________________
+
 
 # Ввод количества заказов
 ordersCount = int(input("Введите колличество заказов: "))
@@ -460,10 +463,27 @@ ordersBase = dict()
 # Обрабатываем каждый заказ
 for i_order in range(ordersCount):
     customer, pizza_name, count = input('{} заказ: '.format(i_order+ 1)).split()
-# 
+
+# Преобразуем количество в целое число  (str => int)
 count = int(count)
 
-
-
+# Если покупатель еще не добавлен в словарь
+if customer not in ordersBase:
+    # Добавляем покупателя и начальную запись о пицце
+    ordersBase[customer] = {pizza_name: count}
+else:
+    # Если покупатель уже есть
+    if pizza_name in ordersBase[customer]:
+    # Если пицца уже была заказана ранее, увеличиваем количество
+        ordersBase[customer][pizza_name] += count
+    else:
+    # Если пицца новая для этого покупателя, добавляем запись   
+        ordersBase[customer][pizza_name] = count
+# Сортируем список покупателей в алфавитном порядке и выводим информацию
+for customer in sorted(ordersBase.keys()):
+    print('{}:'.format(customer))
+# Сортируем пиццы по алфавиту и выводим информацию
+for pizza_name in sorted(ordersBase[customer].keys()):
+    print(' {}: {}'.format(pizza_name,ordersBase[customer][pizza_name]))
 
 
