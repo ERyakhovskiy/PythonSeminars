@@ -73,21 +73,41 @@ array_1 = [1, 5, 10, 20, 40, 80, 100]
 array_2 = [6, 7, 20, 80, 100]
 array_3 = [3, 4, 15, 20, 30, 70, 80, 120]
 
-all_array = []
+# all_array = []
 
 # all_array.append(array_1)
 # all_array.append(array_2)
 # all_array.append(array_3)
 
-for i in array_1:
-    all_array.append(i)
-for i in array_2:
-    all_array.append(i)
-for i in array_3:
-    all_array.append(i)
+# for i in array_1:
+#     if i not in all_array:
+#         all_array.append(i)
+# for i in array_2:
+#     if i not in all_array:
+#         all_array.append(i)
+# for i in array_3:
+#     if i not in all_array:
+#         all_array.append(i)
+# print(all_array)
 
-print(all_array)
+# ____________________________________________________________
+# Эталонное решение без множеств:
 
-# for _ in all_array:
+all_elems = array_1 + array_2 + array_3
+
+print(all_elems)
+
+new_elem_1 = []
+for elem in all_elems:
+    if elem not in new_elem_1 and all(elem in array for array in[array_1, array_2, array_3]): 
+        new_elem_1.append(elem)
+print('Решение без множеств: ', new_elem_1)
+# ________________________________________________________________
+
+    
+# Решение с множествами:
+
+ 
+
     
     
